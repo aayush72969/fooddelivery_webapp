@@ -1,0 +1,259 @@
+/* CSS Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables  */
+
+:root{
+     --navbar-height: 59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Navigation Bar: Logo and Img  */
+#logo{
+ margin: -28px 0px;
+}
+#logo img{
+    height: 92px;
+    margin: 34px 45px;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px;
+    }
+
+
+/* Navigation Bar: List styling */
+#navbar{
+ position:relative
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+ 
+   /* opacity: 0.3; */
+
+
+content: "";
+background-color: rgba(40, 97, 134, 0.69);
+position: absolute;
+top: 0px;
+left:0px;
+height: 105%;
+width: 100%;
+z-index: -1;
+
+}
+
+#navbar ul li{
+  
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display:  block;
+    padding: 3px 22px;
+    border-radius:  20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: greenyellow;
+
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:1300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../pexels-pixabay-255501.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:1300px;
+    width: 100%;
+    z-index: -1;
+    /* top: 0px;
+    left:0px; */
+    /* opacity: 0; */
+}
+#home h1{
+    color: rgb(221, 242, 252);
+    text-align: center;
+    font-family: 'Tiro Telugu', serif;
+    height: 500px;
+    text-shadow: 2px 2px 4px #000000;
+}
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 30px;
+    /* border: 2px solid rgb(15, 15, 15);
+    background-color: rgb(5, 173, 131); */
+}
+/* Services Container */
+    #services{
+        margin: 34px;
+        display: flex;
+        
+    }
+    #services .box{
+        border:2px solid rgb(221, 221, 221) ;
+        height: 199px;
+        padding: 20px;
+        margin: 3px 6px;
+        border-radius: 23px;
+        background-color: rgb(254, 240, 223);
+        border: 2px solid;
+        padding: 20px;
+        width: 409px;
+        resize: both;
+        overflow: auto;
+    }
+    #services .box img{
+        height: 100px;
+        margin: auto;
+        display: block;
+
+    }
+    #services .box p{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Clients section */
+
+    #client-section{
+        height: 344px;
+
+    }
+    #client-section::before{
+        content: "";
+        position:absolute;
+        background: url('../background.jpg');
+        width: 100%;
+        height: 44%;
+        z-index:-1;
+        opacity: 0.4;
+    }
+
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .client-item{
+         padding: 20px;
+
+    }
+    #clients img{
+        height: 200px;
+        border-radius: 20px;
+    }
+   
+    /* Contact Section */
+    #contact{
+        /* position: relative;
+        font-family: 'Roboto', sans-serif; */
+        font-size: 2.5rem;
+        padding: 37px;
+        color: rgb(31, 131, 111);
+        text-align: center;
+        height: -1px;
+        font-family: 'Tiro Telugu', serif;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #contact::before{
+        content: "";
+        position: relative;
+        width: 60%;
+        height: 60%;
+        z-index:-1;
+        opacity: 0.7;
+        background: url('../contact.jpg');
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        
+    }
+
+    #contact-box form{
+        width: 20%;
+        font-size: medium;
+    }
+    #contact-box label{
+        font-size: 38px;
+        padding: 20px;
+    }
+
+    footer{
+        background: black;
+        color: whitesmoke;
+        padding: 9px 20px;
+    }
+
+/* Utility classes */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 37px;
+    color: rgb(31, 131, 111);
+    text-align: center;
+    height: -1px;
+    font-family: 'Tiro Telugu', serif;
+    text-shadow: 2px 2px 4px #000000;
+    /* background-color:black; */
+   /* opacity: 12; */
+    }
+
+
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Tiro Telugu', serif;
+}
+.btn{
+    padding: 9px 30px;
+    border: 2px solid black;
+    background-color: rgb(5, 173, 103);
+    /* color: black; */
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 27px;
+    cursor: pointer;
+   
+}
+.center{ 
+    text-align: center;
+}
+
